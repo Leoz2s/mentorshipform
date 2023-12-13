@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agende sua Mentoria!</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>MENTORIA</h1>
+
+      <p>Preencha o formulário abaixo para</br>
+         agendar a sua mentoria</p>
+    </header>
+
+    <form id="mentorship-form">
+      <fieldset>
+        <legend>INFORMAÇÕES PESSOAIS</legend>
+        <div class="legend-border"></div>
+
+        <div class="input-wrapper-2input">  
+          <div class="label-input-wrap">
+            <label for="mentorship-name">Nome</label>
+            <input type="text" id="mentorship-name" required placeholder=" "/>
+          </div>
+
+          <div class="label-input-wrap">
+            <label for="mentorship-surname">Sobrenome</label>
+            <input type="text" id="mentorship-surname" required placeholder=" "/>
+          </div>
+        </div>
+          
+        <div class="input-wrapper">
+          <label for="mentorship-email">E-mail  <span>(digite um email válido)</span></label>
+          <input type="email" id="mentorship-email" required placeholder=" "/>
+
+          <label for="mentorship-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+          <input type="password" id="mentorship-password" required minlength="6" placeholder=" "/>
+        </div>
+
+      </fieldset>
+
+      
+      <fieldset>
+        <legend>INFORMAÇÕES DO MENTOR</legend>
+        <div class="legend-border"></div>
+
+        <div class="input-wrapper">
+          <label for="mentorship-mentor-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+          <input type="text" id="mentorship-mentor-name" required placeholder=" "/>
+        </div>
+
+      </fieldset>
+
+      
+      <fieldset>
+        <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+        <div class="legend-border"></div>
+
+        <legend class="legend-wrapped">PRIMEIRA MENTORIA</legend>
+        
+        <div class="input-wrapper-2input">
+
+          <div class="label-input-wrap">  
+            <label for="mentorship-date">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="mentorship-date" required/>
+          </div>
+
+          <div class="time-start-end">
+            <div class="label-input-wrap-time">
+              <label for="mentorship-start">Das</label>
+              <input type="time" id="mentorship-start" required/>
+            </div>
+              
+            <div class="label-input-wrap-time">
+              <label for="mentorship-end">Até</label>
+              <input type="time" id="mentorship-end" required/>
+            </div>
+          </div>
+        </div>
+
+        <legend class="legend-wrapped">SEGUNDA MENTORIA</legend>
+        
+        <div class="input-wrapper-2input">
+            <div class="label-input-wrap">
+              <label for="mentorship-date-2">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="mentorship-date-2" required/>
+            </div>
+
+            <div class="time-start-end">
+              <div class="label-input-wrap-time">
+                <label for="mentorship-start-2">Das</label>
+                <input type="time" id="mentorship-start-2" required/>
+              </div>
+
+              <div class="label-input-wrap-time">
+                <label for="mentorship-end-2">Até</label>
+                <input type="time" id="mentorship-end-2" required/>
+              </div>
+            </div>
+        </div>
+      </fieldset>
+    </form>
+    <footer>
+      <! - input type="submit" id="button" form="mentorship-form" value="SALVAR"/> 
+      <button form="mentorship-form">SALVAR</button>
+    </footer>
+  </body>
+</html>
